@@ -30,4 +30,4 @@ cd EfficientNet-Pytorch
 pip install -e .
 ```
 
-The predicted results of the images in "sample.npy" is stored in "predicted_results_for_sample.npy".
+The predicted results of the images in "sample.npy" are stored in "predicted_results_for_sample.npy".
