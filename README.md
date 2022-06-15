@@ -31,3 +31,11 @@ pip install -e .
 ```
 
 The predicted results of the images in "sample.npy" are stored in "predicted_results_for_sample.npy".
+
+
+## Results
+Trained model is saved in "model_for_classification.pth"
+The top validation accuracy is 91.2 %. 
+The plot of how accuracy and loss values have been chaning displayed in figure below.
+![Loss and Accuracy values on train and validation set](Loss and Accuracy.png).
+Prediction of "sample.npy" is written in "predicted_results_for_sample.npy".
