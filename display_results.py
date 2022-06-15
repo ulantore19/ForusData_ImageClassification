@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from sklearn.metrics import classification_report
 import pandas as pd
+import numpy as np
 
 def visualize_train_loss(hist, num_epochs):
     x = np.arange(1, num_epochs+1)
@@ -22,6 +23,6 @@ def visualize_train_loss(hist, num_epochs):
 
 
 def write_classigication_report_csv(y_true, y_pred, target_names, file_name):
-    report = classification_report(y_true, y_pred, target_names)
+    report = classification_report(y_true, y_pred, target_names=target_names, output_dict=True)
     df = pd.DataFrame(report).transpose()
     df.to_csv(file_name, index=False)

@@ -1,15 +1,10 @@
 import torch
 
 
-def classify_images(model, device, is_test_set=False, test_set=None, data_loader=None):
-    if is_test_set:
-        test_set = test_set.to(device)
-        y_hat = model(test_set)
-        predicted = torch.round(torch.sigmoid(y_hat))
-        return predicted.cpu().numpy()
-
+def classify_images(model, device, data_loader=None):
     predicted_values = torch.tensor([]).to(device)
     true_values = torch.tensor([]).to(device)
+
     with torch.no_grad():
         for x, y in data_loader:
             x, y = x.to(device), y.to(device)
