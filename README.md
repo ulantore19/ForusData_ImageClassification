@@ -30,12 +30,12 @@ cd EfficientNet-Pytorch
 pip install -e .
 ```
 
-The predicted results of the images in "sample.npy" are stored in "predicted_results_for_sample.npy".
+The predicted results of the images in `sample.npy` are stored in `predicted_results_for_sample.npy`.
 
 
 ## Results
 Trained model is saved in "model_for_classification.pth"
-The top validation accuracy is 91.2 %. 
+The top validation accuracy is **93.5%**. 
 The plot of how accuracy and loss values have been chaning displayed in figure below.
-![Loss and Accuracy values on train and validation set](Loss%20and%20Accuracy.png).
-Prediction of "sample.npy" is written in "predicted_results_for_sample.npy".
+![Loss and Accuracy values on train and validation set](Loss%20and%20Accuracy.png)
+Prediction of "sample.npy" is written in "predicted_results_for_sample.npy". The metric values were written in `validation.csv`.
