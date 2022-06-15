@@ -19,7 +19,7 @@ Please, pay close attention that your program use Pytorch, and has no more than 
 # Method
 
 In order to classify the given images the transfer learning was applied. Particularly, Efficientnet-b2 was chosen as the base model
-with 9.2M paramteres. YOu can install the pretrained model from source or via pip:
+with 9.2M paramteres. You can install the pretrained model from source or via pip:
 ```
 pip install efficientnet_pytorch
 ``` 
