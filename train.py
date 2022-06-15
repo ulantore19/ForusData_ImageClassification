@@ -9,7 +9,7 @@ import torch.nn as nn
 from torchvision import transforms
 
 
-def train(model, num_epochs, train_dl, valid_dl, loss_fn, optimizerm, model_name="model.pth"):
+def train(model, num_epochs, train_dl, valid_dl, loss_fn, optimizer, model_name="model.pth", device=None):
 
     # Arrays to keep track of loss and accuracy for train and validation set
     loss_hist_train = [0] * num_epochs
